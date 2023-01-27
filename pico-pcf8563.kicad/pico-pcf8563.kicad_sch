@@ -6,8 +6,8 @@
 
   (title_block
     (title "pico-pcf8563")
-    (date "2023-01-23")
-    (rev "2")
+    (date "2023-01-27")
+    (rev "3")
     (company "Bernhard Bablok")
     (comment 1 "https://github.com/bablokb/pcb-pico-pcf8563")
   )
@@ -1208,7 +1208,7 @@
     (in_bom yes) (on_board yes)
     (uuid 3c208f7b-fcc2-486a-9f3a-6889a08b4663)
     (property "Reference" "JP3" (id 0) (at 123.19 150.495 0))
-    (property "Value" "COUT_Jumper" (id 1) (at 123.19 153.035 0))
+    (property "Value" "~{INT}_Jumper" (id 1) (at 123.19 153.035 0))
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (id 2) (at 123.19 155.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1579,8 +1579,8 @@
     (property "Reference" "R2" (id 0) (at 114.3 80.01 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100K" (id 1) (at 113.665 82.55 90)
-      (effects (font (size 0.9 0.9)) (justify left))
+    (property "Value" "10K" (id 1) (at 113.665 82.55 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 115.57 80.772 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -1588,7 +1588,7 @@
     (property "Datasheet" "~" (id 3) (at 115.57 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C25741" (id 4) (at 115.57 82.55 0)
+    (property "LCSC" "C25744" (id 4) (at 115.57 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 150bd5f0-29a3-4b37-b059-025f3c432d31))
@@ -1666,7 +1666,7 @@
     (in_bom yes) (on_board yes)
     (uuid bec03931-09e6-4e41-b61c-87083fe69a87)
     (property "Reference" "JP2" (id 0) (at 123.19 141.605 0))
-    (property "Value" "~{INT}_Jumper" (id 1) (at 123.19 144.145 0))
+    (property "Value" "COUT_Jumper" (id 1) (at 123.19 144.145 0))
     (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" (id 2) (at 123.19 146.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1849,16 +1849,16 @@
       (reference "JP1") (unit 1) (value "3V3_Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
     )
     (path "/bec03931-09e6-4e41-b61c-87083fe69a87"
-      (reference "JP2") (unit 1) (value "~{INT}_Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
+      (reference "JP2") (unit 1) (value "COUT_Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
     )
     (path "/3c208f7b-fcc2-486a-9f3a-6889a08b4663"
-      (reference "JP3") (unit 1) (value "COUT_Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
+      (reference "JP3") (unit 1) (value "~{INT}_Jumper") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
     )
     (path "/bb0b989e-b5a1-46a4-90cb-50f164e6ade9"
       (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/b8429782-e8d6-4c46-a9d4-176962d20a7f"
-      (reference "R2") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R2") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/23a3edd9-37fe-4f82-bb93-ec19c92c0a0d"
       (reference "R3") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
