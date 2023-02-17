@@ -42,10 +42,10 @@
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
       (disableapertmacros false)
-      (usegerberextensions false)
-      (usegerberattributes true)
-      (usegerberadvancedattributes true)
-      (creategerberjobfile true)
+      (usegerberextensions true)
+      (usegerberattributes false)
+      (usegerberadvancedattributes false)
+      (creategerberjobfile false)
       (svguseinch false)
       (svgprecision 6)
       (excludeedgelayer true)
@@ -62,15 +62,15 @@
       (psnegative false)
       (psa4output false)
       (plotreference true)
-      (plotvalue true)
+      (plotvalue false)
       (plotinvisibletext false)
       (sketchpadsonfab false)
-      (subtractmaskfromsilk false)
+      (subtractmaskfromsilk true)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "../jlcpcb")
     )
   )
 
@@ -142,7 +142,7 @@
     (at 113.4 100.5 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
-    (property "LCSC" "C25741")
+    (property "LCSC" "C25744")
     (property "Sheetfile" "pico-pcf8563.kicad_sch")
     (property "Sheetname" "")
     (path "/b8429782-e8d6-4c46-a9d4-176962d20a7f")
@@ -151,7 +151,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d0a3d60f-449b-4aa1-96fa-1d8a47c89f8b)
     )
-    (fp_text value "100K" (at 0 1.17 90) (layer "F.Fab") hide
+    (fp_text value "10K" (at 0 1.17 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2357c099-6267-4088-bbd2-1f26b9b78cf3)
     )
@@ -277,7 +277,7 @@
     (property "Sheetname" "")
     (property "Value" "Stemma-QT_Qwicc")
     (path "/be871d83-8bfa-494f-a83c-a4db9e2e3918")
-    (attr smd)
+    (attr smd exclude_from_pos_files)
     (fp_text reference "J1" (at 0 0) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f36bb126-9b70-4c47-84c9-10f7493a1b77)
@@ -314,8 +314,8 @@
       (net 5 "/SDA") (pinfunction "SDA") (pintype "bidirectional") (tstamp 036dd96f-15a3-4f5b-9e64-bdd541844420))
     (pad "4" smd roundrect (at 1.5 -2) (size 0.6 1.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 6 "/SCL") (pinfunction "SCL") (pintype "bidirectional") (tstamp ba00613c-1f5e-42bf-a1af-dd82f02d0a92))
-    (pad "MP" smd roundrect (at -2.8 1.875) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.208333) (tstamp 3b39c5c7-9024-4638-9f90-703e4695e46b))
-    (pad "MP" smd roundrect (at 2.8 1.875) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.208333) (tstamp 4bc755c3-2c33-49d0-bdc9-32141670f8c1))
+    (pad "MP" smd roundrect (at -2.8 1.875) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2083333333) (tstamp 3b39c5c7-9024-4638-9f90-703e4695e46b))
+    (pad "MP" smd roundrect (at 2.8 1.875) (size 1.2 1.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2083333333) (tstamp 4bc755c3-2c33-49d0-bdc9-32141670f8c1))
     (model "${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -633,7 +633,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 2d8785da-d567-4a5b-858d-d8b326d81a74)
     )
-    (fp_text value "~{INT}_Jumper" (at 0 -1.9) (layer "B.Fab") hide
+    (fp_text value "COUT_Jumper" (at 0 -1.9) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 3f4ade5b-f070-47ea-b3de-de64151bfa9d)
     )
@@ -670,7 +670,7 @@
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp ef087736-1c5a-4a3a-8c70-3e1eddb41339)
     )
-    (fp_text value "COUT_Jumper" (at 0 -1.9) (layer "B.Fab") hide
+    (fp_text value "~{INT}_Jumper" (at 0 -1.9) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp 01aaeede-6dba-4568-9851-1d95b8fe45d7)
     )
