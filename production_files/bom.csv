@@ -1,13 +1,6 @@
 Comment,Designator,Footprint,LCSC
-"100nF","C1","Capacitor_SMD:C_0402_1005Metric","C1525"
-"22pF","C2","Capacitor_SMD:C_0402_1005Metric","C1555"
-"Stemma-QT_Qwicc","J1","Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal",""
-"Ext_Conn","J2","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",""
-"Pico Pin 1-7","J4","user:Connector_1x7_no_solder",""
-"Pico Pin 40-34","J5","user:Connector_1x7_no_solder",""
-"3V3_Jumper","JP1","Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm",""
-"COUT_Jumper","JP2","Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm",""
-"~{INT}_Jumper","JP3","Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm",""
-"10K","R1,R2,R3,R4","Resistor_SMD:R_0402_1005Metric","C25744"
-"PCF8563T","U1","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","C7440"
-"Crystal","Y1","Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm","C32346"
+100nF,C1,C_0402_1005Metric,C1525
+22pF,C2,C_0402_1005Metric,C1555
+10K,"R1,R2,R3,R4",R_0402_1005Metric,C25744
+Crystal,Y1,Crystal_SMD_3215-2Pin_3.2x1.5mm,C32346
+PCF8563T,U1,SOIC-8_3.9x4.9mm_P1.27mm,C7440

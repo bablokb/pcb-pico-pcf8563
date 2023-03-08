@@ -12,10 +12,6 @@ you should solder the connectors for permanent projects and best results.
 ![](schematic.png)
 ![](pcb-layout.png)
 
-*Note: in the (current) revision 3, the CLKOUT-pin is connected to GP4.
-This gpio is not able to measure clock-frequency using hardware-PWM. The
-next revision will therefore swap GP4 (CLKOUT) and GP5 (INT).*
-
 Ready to use production-files for JLCPCB are in the directory `production_files`.
 
 
