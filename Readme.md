@@ -1,18 +1,24 @@
 PCB Pico PCF8563
 ================
 
-![](pcb-3D-top.png)
-![](pcb-3D-bot.png)
+![](pcb.jpg)
 
-This is a breakout with the PCF8563 RTC. It will fit underneath the Pico. It uses
+This is a simple breakout with the PCF8563 RTC. It will fit underneath the Pico. It uses
 a solderless layout for the Pico-connectors and should hold by itself (but
 this is highly dependent on e.g. your pins). As always, this is for prototyping,
 you should solder the connectors for permanent projects and best results.
 
-![](schematic.png)
-![](pcb-layout.png)
+![](pcb-3D-top.png)
+![](pcb-3D-bot.png)
+
+
+Hardware
+--------
 
 Ready to use production-files for JLCPCB are in the directory `production_files`.
+
+![](schematic.png)
+![](pcb-layout.png)
 
 
 Special use Jumpers
